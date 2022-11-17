@@ -2,7 +2,8 @@ version: '3'
 
 services:
   kali-light:
-    image: "kali-light"
+    image: "kali-light:latest"
     container_name: "kali"
+    hostname: "pwn-box"
     volumes:
       - /home/cm03/kali:/root:z

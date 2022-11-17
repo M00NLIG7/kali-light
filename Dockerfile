@@ -11,6 +11,9 @@ RUN apt install aircrack-ng crackmapexec crunch curl dnsenum dnsrecon dnsutils d
 
 RUN gunzip /usr/share/wordlists/rockyou.txt.gz
 
+RUN TERM=xterm-256color
+
+
 # Alias
 RUN echo "alias l='ls -al'" >> /root/.bashrc
 RUN echo "alias nse='ls /usr/share/nmap/scripts | grep '" >> /root/.bashrc
